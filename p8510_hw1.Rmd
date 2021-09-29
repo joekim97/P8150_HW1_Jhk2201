@@ -7,7 +7,7 @@ output: github_document
 
 ## Problem 1
 
-##### Create a data frame comprised of:
+###### Create a data frame comprised of:
 
 - a random sample of size 10 from a standard Normal distribution
 - a logical vector indicating whether elements of the sample are greater than 0
@@ -43,6 +43,20 @@ mean(dataframe_1$vec_char)
 mean(dataframe_1$vec_factor)
 ```
 
-You can not take the mean of the vec_char and vec_factor because they are not numerical values. 
+##### You can not take the mean of the vec_char and vec_factor because they are not numerical values. 
 
+----------
+
+##### 1C) In some cases, you can explicitly convert variables from one type to another. Write a code chunk that applies the as.numeric function to the logical, character, and factor variables (please show this chunk but not the output). What happens, and why? Does this help explain what happens when you try to take the mean?
+
+```{r}
+### Coercing variable types 
+as.numeric(dataframe_1$vec_logical)
+as.numeric(dataframe_1$vec_char)
+as.numeric(dataframe_1$vec_factor)
+
+```
+
+###### By converting variables to be numeric, it converts reoccuring values are numbers values. The vec_factor values are converted into 1,2, and 3. If we are to pull the means now, they would result in a numerical mean. 
+  
 
