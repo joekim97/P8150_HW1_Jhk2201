@@ -29,4 +29,20 @@ dataframe_1 = tibble(
 
 ```
 
+--------------
+
+##### 1B) Try to take the mean of each variable in your dataframe. What works and what doesn’t?
+
+```{r}
+##### Checking Means of each variable ###
+
+library(tidyverse)
+mean(dataframe_1$vec_numeric)
+mean(dataframe_1$vec_logical)
+mean(dataframe_1$vec_char)
+mean(dataframe_1$vec_factor)
+```
+
+You can not take the mean of the vec_char and vec_factor because they are not numerical values. 
+
 
