@@ -74,3 +74,8 @@ mean(na.omit(penguins$flipper_length_mm))
 ```
 
 This dataset tells us information about certain penguins, presumably by an individual named Palmer. We are given the species, the name of the island, bill length (mm), bill depth (mm), flipper length (mm), body mass (grams), sex, and year.. The dataset consists of 344 rows and 8 columns. The mean flipper length was 200.9152 mm. 
+
+```{r}
+ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color = species)) + geom_point()
+
+```
