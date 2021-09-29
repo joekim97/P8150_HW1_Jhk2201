@@ -59,4 +59,18 @@ as.numeric(dataframe_1$vec_factor)
 
 ###### By converting variables to be numeric, it converts reoccuring values are numbers values. The vec_factor values are converted into 1,2, and 3. If we are to pull the means now, they would result in a numerical mean. 
   
+------------
 
+## Problem 2 
+
+##### 1a) Loading Penguins Dataset 
+
+```{r}
+data("penguins", package = "palmerpenguins")
+
+nrow(penguins)
+ncol(penguins)
+mean(na.omit(penguins$flipper_length_mm))
+```
+
+This dataset tells us information about certain penguins, presumably by an individual named Palmer. We are given the species, the name of the island, bill length (mm), bill depth (mm), flipper length (mm), body mass (grams), sex, and year.. The dataset consists of 344 rows and 8 columns. The mean flipper length was 200.9152 mm. 
