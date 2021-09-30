@@ -78,4 +78,5 @@ This dataset tells us information about certain penguins, presumably by an indiv
 ```{r}
 ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color = species)) + geom_point()
 
+ggsave("penguins.png")
 ```
